@@ -6,7 +6,26 @@
   <packaging>war</packaging>
   <name>SpingWedMVC</name>
   <description>SpingWedMVC</description>
+  
+  <dependencies>
+  
+  	<dependency>
+  	
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-webmvc</artifactId>
+  		<version>5.0.6.RELEASE</version>	
+  		
+  	</dependency>
+  	
+ 	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-web</artifactId>
+  		<version>5.0.6.RELEASE</version>	
+  	</dependency>
+  </dependencies>
+  
   <build>
+  	<defaultGoal>install</defaultGoal>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
@@ -25,5 +44,6 @@
         </configuration>
       </plugin>
     </plugins>
+    <finalName>${project.artifactId}</finalName>
   </build>
 </project>
